@@ -2,48 +2,80 @@
 
 <div id="filters">
   <div class="filter">
-    <div><i class="fa-solid fa-fire"></i></div>
-    <p>Trending</p>
+    <a href="/listings">
+      <div>
+        <i class="fa-solid fa-house"></i>
+      </div>
+      <p>All</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-bed"></i></div>
-    <p>Rooms</p>
+    <a href="/listings/category/Trending">
+      <div>
+        <i class="fa-solid fa-fire"></i>
+      </div>
+      <p>Trending</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-mountain-city"></i></div>
-    <p>Iconic Cities</p>
+    <a href="/listings/category/Rooms">
+      <div><i class="fa-solid fa-bed"></i></div>
+      <p>Rooms</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-mountain"></i></div>
-    <p>Mountains</p>
+    <a href="/listings/category/Iconic Cities">
+      <div><i class="fa-solid fa-mountain-city"></i></div>
+      <p>Iconic Cities</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-brands fa-fort-awesome"></i></div>
-    <p>Castles</p>
+    <a href="/listings/category/Mountains">
+      <div><i class="fa-solid fa-mountain"></i></div>
+      <p>Mountains</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-person-swimming"></i></div>
-    <p>Amazing Pools</p>
+    <a href="/listings/category/Castles">
+      <div><i class="fa-brands fa-fort-awesome"></i></div>
+      <p>Castles</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-campground"></i></div>
-    <p>Camping</p>
+    <a href="/listings/category/Amazing Pools">
+      <div><i class="fa-solid fa-person-swimming"></i></div>
+      <p>Amazing Pools</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-cow"></i></div>
-    <p>Farms</p>
+    <a href="/listings/category/Camping">
+      <div><i class="fa-solid fa-campground"></i></div>
+      <p>Camping</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-regular fa-snowflake"></i></div>
-    <p>Arctic</p>
+    <a href="/listings/category/Farms">
+      <div><i class="fa-solid fa-cow"></i></div>
+      <p>Farms</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-igloo"></i></div>
-    <p>Domes</p>
+    <a href="/listings/category/Arctic">
+      <div><i class="fa-regular fa-snowflake"></i></div>
+      <p>Arctic</p>
+    </a>
   </div>
   <div class="filter">
-    <div><i class="fa-solid fa-ship"></i></div>
-    <p>Boats</p>
+    <a href="/listings/category/Domes">
+      <div><i class="fa-solid fa-igloo"></i></div>
+      <p>Domes</p>
+    </a>
+  </div>
+  <div class="filter">
+    <a href="/listings/category/Boats">
+      <div><i class="fa-solid fa-ship"></i></div>
+      <p>Boats</p>
+    </a>
   </div>
   <div class="tax-toogle">
     <div class="form-check-reverse form-switch">
@@ -73,7 +105,7 @@
       <div class="card-body">
         <p class="card-text">
           <b><%= listing.title %></b> <br />
-          &#8377; <%= listing.price.toLocaleString("en-IN") %> / night 
+          &#8377; <%= listing.price.toLocaleString("en-IN") %> / night
           <i class="tax-info">&nbsp;&nbsp;+18% GST</i> <br />
         </p>
       </div>

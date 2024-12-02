@@ -18,6 +18,7 @@ const User = require("./models/user.js");
 const reviewRouter = require("./routes/review.js");
 const listingRouter = require("./routes/listing.js");
 const userRouter = require("./routes/user.js");
+const categoryRouter = require("./routes/category.js");
 
 const MONGO_URL = "mongodb://127.0.0.1:27017/wanderlust";
 
@@ -82,6 +83,7 @@ app.get("/demouser", async (req, res) => {
   res.send(registerUser);
 });
 
+app.use("/listings/category", categoryRouter);
 app.use("/listings", listingRouter);
 app.use("/listings/:id/reviews", reviewRouter);
 app.use("/", userRouter);
